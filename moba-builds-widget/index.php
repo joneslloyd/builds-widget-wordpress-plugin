@@ -7,8 +7,13 @@ Description: A WordPress plugin for easy use of builds widgets
 Version:     0.1
 Author:      Lloyd Jones <lj@mobalyticshq.com, lloyd@lloydjones.io>
 Author URI:  https://github.com/joneslloyd
-License:     GPL2 etc
-License URI: http://link to your plugin license
+Contributors: joneslloyd
+Stable tag: v0.1.12-alpha
+Tested up to: 5.7
+Requires at least: 4.7
+Requires PHP: 7.0
+License: GPLv2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
 */
 
 //Update this as per the release version of the widget in GitHub
