@@ -43,7 +43,8 @@ function moba_builds_widget_do_output_shortcode($atts = array()) {
 
      $atts = shortcode_atts( array(
         'champion' => 'amumu',
-        'layout' => 'full'
+        'layout' => 'full',
+        'role' => 'UNKNOWN'
     ), $atts, MOBA_BUILDS_WIDGET_NAME );
 
         ob_start();
@@ -52,7 +53,8 @@ function moba_builds_widget_do_output_shortcode($atts = array()) {
             <script type="application/json">
                 {
                     "champion": "<?php echo $atts['champion']; ?>",
-                    "layout": "<?php echo $atts['layout']; ?>"
+                    "layout": "<?php echo $atts['layout']; ?>",
+                    "role": "<?php echo $atts['role']; ?>"
                 }
             </script>
         </div>
