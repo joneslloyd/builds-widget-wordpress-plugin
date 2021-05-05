@@ -4,11 +4,11 @@
 Plugin Name: Mobalytics builds widgets
 Plugin URI:  https://mobalytics.gg
 Description: A WordPress plugin for easy use of builds widgets
-Version:     0.1
+Version:     v0.2.1-alpha
 Author:      Lloyd Jones <lj@mobalyticshq.com, lloyd@lloydjones.io>
 Author URI:  https://github.com/joneslloyd
 Contributors: joneslloyd
-Stable tag: v0.1.12-alpha
+Stable tag: v0.2.1-alpha
 Tested up to: 5.7
 Requires at least: 4.7
 Requires PHP: 7.0
@@ -17,7 +17,7 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
 */
 
 //Update this as per the release version of the widget in GitHub
-define('MOBA_BUILDS_WIDGET_VERSION', 'v0.1.12-alpha');
+define('MOBA_BUILDS_WIDGET_VERSION', 'v0.2.1-alpha');
 
 //For enqueueing the script
 define('MOBA_BUILDS_WIDGET_SCRIPT_URL', 'https://cdn.jsdelivr.net/gh/joneslloyd/builds-widget@'.MOBA_BUILDS_WIDGET_VERSION.'/dist/index.bundle.js');
@@ -43,7 +43,8 @@ function moba_builds_widget_do_output_shortcode($atts = array()) {
 
      $atts = shortcode_atts( array(
         'champion' => 'amumu',
-        'layout' => 'full'
+        'layout' => 'full',
+        'role' => 'UNKNOWN'
     ), $atts, MOBA_BUILDS_WIDGET_NAME );
 
         ob_start();
@@ -52,7 +53,8 @@ function moba_builds_widget_do_output_shortcode($atts = array()) {
             <script type="application/json">
                 {
                     "champion": "<?php echo $atts['champion']; ?>",
-                    "layout": "<?php echo $atts['layout']; ?>"
+                    "layout": "<?php echo $atts['layout']; ?>",
+                    "role": "<?php echo $atts['role']; ?>"
                 }
             </script>
         </div>
