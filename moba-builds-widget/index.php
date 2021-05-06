@@ -4,11 +4,11 @@
 Plugin Name: Mobalytics builds widgets
 Plugin URI:  https://mobalytics.gg
 Description: A WordPress plugin for easy use of builds widgets
-Version:     v0.2.1-alpha
+Version:     v0.2.2-alpha
 Author:      Lloyd Jones <lj@mobalyticshq.com, lloyd@lloydjones.io>
 Author URI:  https://github.com/joneslloyd
 Contributors: joneslloyd
-Stable tag: v0.2.1-alpha
+Stable tag: v0.2.2-alpha
 Tested up to: 5.7
 Requires at least: 4.7
 Requires PHP: 7.0
@@ -17,7 +17,7 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
 */
 
 //Update this as per the release version of the widget in GitHub
-define('MOBA_BUILDS_WIDGET_VERSION', 'v0.2.1-alpha');
+define('MOBA_BUILDS_WIDGET_VERSION', 'v0.2.2-alpha');
 
 //For enqueueing the script
 define('MOBA_BUILDS_WIDGET_SCRIPT_URL', 'https://cdn.jsdelivr.net/gh/joneslloyd/builds-widget@'.MOBA_BUILDS_WIDGET_VERSION.'/dist/index.bundle.js');
